@@ -1,0 +1,144 @@
+<class-diagram version="0.9.86" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class corner="BOTTOM_RIGHT" language="java" name="model.main" project="Server" file="/Server/src/model/main.java" 
+    binary="false">    
+    <position x="118" y="78" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <package corner="BOTTOM_RIGHT" language="java" name="controller" project="Server" file="/Server/src/controller" 
+    binary="false">    
+    <position x="408" y="64" width="-1" height="-1"/>  
+  </package>  
+  <interface corner="BOTTOM_RIGHT" language="java" name="controller.command" project="Server" 
+    file="/Server/src/controller/command.java" binary="false">    
+    <position x="410" y="129" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class corner="BOTTOM_RIGHT" language="java" name="controller.downloadFile" project="Server" 
+    file="/Server/src/controller/downloadFile.java" binary="false">    
+    <position x="409" y="255" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <package corner="BOTTOM_RIGHT" language="java" name="view" project="Server" file="/Server/src/view" binary="false">    
+    <position x="157" y="291" width="-1" height="-1"/>  
+  </package>  
+  <class corner="BOTTOM_RIGHT" language="java" name="view.http" project="Server" file="/Server/src/view/http.java" 
+    binary="false">    
+    <position x="156" y="490" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface corner="BOTTOM_RIGHT" language="java" name="view.webInterface" project="Server" 
+    file="/Server/src/view/webInterface.java" binary="false">    
+    <position x="156" y="351" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <package corner="BOTTOM_RIGHT" language="java" name="model" project="Server" file="/Server/src/model" binary="false">    
+    <position x="732" y="286" width="-1" height="-1"/>  
+  </package>  
+  <class corner="BOTTOM_RIGHT" language="java" name="model.DataBaseHandler" project="Server" 
+    file="/Server/src/model/DataBaseHandler.java" binary="false">    
+    <position x="639" y="382" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="model.manager" project="Server" 
+    file="/Server/src/model/manager.java" binary="false">    
+    <position x="830" y="368" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="model.file" project="Server" file="/Server/src/model/file.java" 
+    binary="false">    
+    <position x="648" y="520" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="model.userData" project="Server" 
+    file="/Server/src/model/userData.java" binary="false">    
+    <position x="890" y="516" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <realization>    
+    <source project="Server" name="controller.downloadFile" file="/Server/src/controller/downloadFile.java" 
+      binary="false"/>    
+    <target project="Server" name="controller.command" file="/Server/src/controller/command.java" binary="false"/>  
+  </realization>  
+  <association>    
+    <source project="Server" name="controller.downloadFile" file="/Server/src/controller/downloadFile.java" 
+      binary="false" navigable="false">      
+      <attribute name="INSTANCE"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Server" name="controller.downloadFile" file="/Server/src/controller/downloadFile.java" 
+      binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization>    
+    <source project="Server" name="view.http" file="/Server/src/view/http.java" binary="false"/>    
+    <target project="Server" name="view.webInterface" file="/Server/src/view/webInterface.java" binary="false"/>  
+  </realization>  
+  <association>    
+    <source project="Server" name="model.manager" file="/Server/src/model/manager.java" binary="false" navigable="false">      
+      <attribute name="users"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="Server" name="model.userData" file="/Server/src/model/userData.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Server" name="model.file" file="/Server/src/model/file.java" binary="false" navigable="false">      
+      <attribute name="allows"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="Server" name="model.userData" file="/Server/src/model/userData.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Server" name="model.file" file="/Server/src/model/file.java" binary="false" navigable="false">      
+      <attribute name="userFile"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Server" name="model.userData" file="/Server/src/model/userData.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Server" name="model.manager" file="/Server/src/model/manager.java" binary="false" navigable="false">      
+      <attribute name="INSTANCE"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Server" name="model.manager" file="/Server/src/model/manager.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
